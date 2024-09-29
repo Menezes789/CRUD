@@ -1,0 +1,52 @@
+body {
+    background-image: url('./fundo-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    margin: 10px;
+    height: 100vh;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.maior{
+    width: 40%;
+    height: 200%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.caixa-texto{
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 10px;
+    height: 110%;
+}
+    
+h1{
+    text-align: center;
+    font-size: 300%;
+}
+
+li{
+    font-size: 150%;
+}
+
+label{
+    margin-top: 10%;
+    height: 200px;
+    font-size: 120%;
+    text-align: left;
+}
+
+.botao{
+    border: none;
+    border-radius: 5px;
+}
+
+.tipo-cell{
+    padding: 10px;
+    height: 100%;
+    width: 700px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo.css">
+    <title>Exercicio 7</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div>
+        <h1>Formulário para empresa de engenharia</h1>
+        
+    </div>
+
+    <div class="tipo-cell">  
+        <main>
+            <form>
+                <ol>
+                    <li><b>Informações pessoais</b></li>
+                    
+                    <label>Nome:
+                        <br>
+                        <input class="caixa-texto" type="text" placeholder="Digite seu nome">
+                    </label>
+                    <br><br>
+
+                    <label>Email:
+                        <br>
+                        <input class="maior" type="email" placeholder="empresa@engenharia.com.br">
+                    </label>
+                    <br><br>
+
+                    <label>Telefone:
+                        <br>
+                        <input class="caixa-texto" type="tell" placeholder="+55 (61) 99999-9999">
+                    </label>
+                    <br><br>
+
+                    <li><b>Detalhes do projeto</b></li>
+                    <br>
+                    <label>Tipo do projeto
+                        <br>
+                        <input class="maior" type="text" placeholder="Construção, Reformas, consutoria, etc...">
+                    </label>
+                    <br><br>
+
+                    <label>Descrição do projeto
+                        <br>
+                        <input class="maior" type="text">
+                    </label>
+                    <br><br>
+
+                    <label>Data de Início Prevista
+                        <br>
+                        <input class="caixa-texto" type="date">
+                    </label>
+                    <br><br>
+
+                    <label>Prazo para Conclusão
+                        <br>
+                        <input class="caixa-texto" type="date">
+                    </label>
+                    <br><br>
+
+                    <li><b>Consentimento</b></li>
+                    <br>
+                    <label>Aceita os termos?
+                        <input type="checkbox">
+                    </label>
+                    <br><br>
+                    <input class="botao" type="button" value="Enviar" onclick="alert('cadastro com sucesso!')">
+                </ol>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="icon" href="imagens/icon.png">
+
+    <style>
+        body {
+            background-image: url("../imagens/imagem4.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-custom {
+            background-image: linear-gradient(to right, #FF69B4, #800080);
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: rgb(70, 6, 206);
+        }
+
+        .purple-text {
+            color: rgb(255, 255, 255);
+        }
+
+        .bg-grey {
+            background-color: #43197f;
+        }
+
+        .bg-eigengrau {
+            background-color: #43197f;
+            color: #fff;
+        }
+
+        .bg-grey-line {
+            border: 1px solid #43197f;
+        }
+
+        .purple-text {
+            color: rgb(255, 255, 255);
+        }
+
+        .custom-hr {
+            border-color: #ffffff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="imagens/icon.png" alt="Logo" width="40" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="/">Página inicial</a>
+                    <a class="nav-link active" aria-current="page" href="/form">Nota Tarefa</a>
+                    <a class="nav-link" aria-current="page" href="/rcrud">Listar Tarefas</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim do Nav Bar -->
+
+    <!-- Form -->
+    <div class="container">
+        <main>
+            <h1 class="purple-text">Formulário</h1>
+            <hr class="custom-hr">
+            <form method="POST">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-grey bg-grey-line purple-text">Titulo</span>
+                    <input type="text" aria-label="Nome" class="form-control bg-grey-line" id="titulo" name="titulo">
+                    <label class="input-group-text bg-grey bg-grey-line purple-text" for="inputGroupSelect01">Prioridade</label>
+                    <select class="form-select bg-grey-line" id="prioridade" name="prioridade">
+                        <option selected>Escolha...</option>
+                        <option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baixa">Baixa</option>
+                    </select>
+                    <span class="input-group-text bg-grey bg-grey-line purple-text">Etiqueta</span>
+                    <input type="text" aria-label="Nome" class="form-control bg-grey-line" id="etiqueta"
+                        name="etiqueta">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-grey bg-grey-line purple-text">Data de Criação</span>
+                    <input type="date" aria-label="Sobrenome" class="form-control bg-grey-line" id="dataCriacao"
+                        name="dataCriacao">
+                    <span class="input-group-text bg-grey bg-grey-line purple-text">Status de Conclusão</span>
+                    <input type="text" aria-label="Nome" class="form-control bg-grey-line" id="dataConclusao"
+                        name="dataConclusao" placeholder="Pendente">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-grey bg-grey-line purple-text">Descrição</span>
+                    <textarea class="form-control bg-grey-line" aria-label="With textarea" id="descricao"
+                        name="descricao"></textarea>
+                </div>
+                <button type="submit" class="btn bg-grey bg-grey-line purple-text" id="btn">Enviar</button>
+            </form>
+        </main>
+    </div>
+    <!-- Fim do form -->
+
+    <script>
+        // Obtém a data atual
+        var dataAtual = new Date().toISOString().split('T')[0];
+
+        // Define a data atual como valor padrão do campo de data de criação
+        document.getElementById("dataCriacao").value = dataAtual;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
